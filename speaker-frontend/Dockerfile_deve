@@ -1,0 +1,23 @@
+FROM node:alpine
+
+
+WORKDIR /app
+
+VOLUME /app
+
+COPY . .
+
+RUN npm install && \
+	npm install -g @angular/cli && \
+	npm install --save-dev @angular-devkit/build-angular
+
+
+RUN npm audit fix
+
+RUN npm update
+
+
+
+#An ugly endless loop to keep the container running
+CMD while true; do sleep 1000; done
+EXPOSE 4200
