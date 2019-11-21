@@ -22,6 +22,7 @@ docker build -t googlespeaker:deve --file Dockerfile_deve .
 docker run -d -p 33000:4200 -v <FullPath/to/speaker-frontendDirectory>:/app --memory=700m --name googlespeakerdev googlespeaker:deve
 (This will host the container on host port 33000 on ngserve )
 
-#### Go Into Container and start Server
+#### Go Into Container
 docker exec -it googlespeakerdev /bin/sh
+####  Start Server
 ng serve --host 0.0.0.0 --poll 10000
