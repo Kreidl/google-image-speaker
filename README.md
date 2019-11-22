@@ -26,3 +26,12 @@ docker run -d -p 33000:4200 -v <FullPath/to/speaker-frontendDirectory>:/app --me
 docker exec -it googlespeakerdev /bin/sh
 ####  Start Server
 ng serve --host 0.0.0.0 --poll 10000
+
+
+
+## Frontend
+(Stay in speaker-backend directory for this command)
+
+
+### Start Application (Will be http://localhost:5000/WeatherForecast or https://localhost:5001/WeatherForecast by Default)
+dotnet Run
