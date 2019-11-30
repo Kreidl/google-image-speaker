@@ -29,7 +29,7 @@ ng serve --host 0.0.0.0 --poll 10000
 
 
 
-## Frontend
+## Backend
 (Stay in speaker-backend directory for this command)
 
 
