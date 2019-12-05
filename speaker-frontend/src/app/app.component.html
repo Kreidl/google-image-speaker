@@ -17,6 +17,12 @@
       <form [formGroup]="textUploadForm" (ngSubmit)="onSubmitText()">
         <label for="text">Eingabe Sprachtext</label>
         <textarea name="text" cols="20" rows="8" formControlName="text" class="form-control"></textarea>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                Send Text
+            </button>
+        </div>
       </form>
     </div>
   </div>

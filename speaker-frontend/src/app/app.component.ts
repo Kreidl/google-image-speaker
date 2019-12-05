@@ -25,6 +25,10 @@ export class AppComponent implements OnInit {
     });
   }
 
+  onSubmitText(){
+    
+  }
+
   private base64textString:String="";
 
   handleFileSelect(evt){
