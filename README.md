@@ -34,4 +34,4 @@ ng serve --host 0.0.0.0 --poll 10000
 
 
 ### Start Application (Will be http://localhost:5000/WeatherForecast or https://localhost:5001/WeatherForecast by Default)
-dotnet Run
+dotnet run
