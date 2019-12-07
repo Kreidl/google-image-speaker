@@ -9,6 +9,7 @@ COPY . .
 
 RUN npm install && \
 	npm install -g @angular/cli && \
+	npm install --save rxjs-compat && \
 	npm install --save-dev @angular-devkit/build-angular 
 
 

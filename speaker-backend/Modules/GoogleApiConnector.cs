@@ -65,13 +65,8 @@ namespace SpeakerGateway.Modules
                 response.AudioContent.WriteTo(output);
             }
  
-            //return ;
             byte[] data = System.IO.File.ReadAllBytes(fileName + ".mp3");
             return "{\"body\": \""+Convert.ToBase64String(data)+"\"}";
-            //return "audio/mpeg3;base64," + response.AudioContent.ToBase64();
-
-            //return Convert.ToBase64String(response.AudioContent, 0, response.AudioContent.Length, 
-              //                  Base64FormattingOptions.InsertLineBreaks); 
         }
 
         /*##################################################
