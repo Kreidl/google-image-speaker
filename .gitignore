@@ -61,7 +61,10 @@ typings/
 .next
 
 
+## mp3 files
+/speaker-backend/*.mp3
 
+/speaker-frontend/package-lock.json
 
 
 ## Ignore Visual Studio temporary files, build results, and

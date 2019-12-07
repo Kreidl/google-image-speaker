@@ -9,7 +9,8 @@ COPY . .
 
 RUN npm install && \
 	npm install -g @angular/cli && \
-	npm install --save-dev @angular-devkit/build-angular
+	npm install --save file-saver && \
+	npm install --save-dev @angular-devkit/build-angular 
 
 
 RUN npm audit fix

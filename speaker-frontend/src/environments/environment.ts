@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8000'
+  API_BASE_PATH: 'https://localhost:5001',
+  TEXT_SERVICE_PATH: '',
+  IMAGE_SERVICE_PATH: ''
 };
 
 /*

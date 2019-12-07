@@ -26,12 +26,16 @@ docker run -d -p 33000:4200 -v <FullPath/to/speaker-frontendDirectory>:/app --me
 docker exec -it googlespeakerdev /bin/sh
 ####  Start Server
 ng serve --host 0.0.0.0 --poll 10000
-
+### Maybe it is needed to delete modules in node_modules. The system will tell if the node_module exists
 
 
 ## Backend
 (Stay in speaker-backend directory for this command)
 
+### Prerequisites
+You should set the GoogleCredential Variable.
+For windows use this in Powershell:
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\[FILE_NAME].json"
 
-### Start Application (Will be http://localhost:5000/WeatherForecast or https://localhost:5001/WeatherForecast by Default)
+### Start Application (Will be http://localhost:5000/api/text, http://localhost:5000/api/image or https://localhost:5001/api/text,https://localhost:5001/api/image  by Default)
 dotnet run
