@@ -9,7 +9,6 @@ COPY . .
 
 RUN npm install && \
 	npm install -g @angular/cli && \
-	npm install --save file-saver && \
 	npm install --save-dev @angular-devkit/build-angular 
 
 

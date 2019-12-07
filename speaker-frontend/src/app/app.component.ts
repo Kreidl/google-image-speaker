@@ -77,8 +77,6 @@ export class AppComponent implements OnInit {
       };
         this.textservice.sendText(mytext).subscribe(
           success => {
-              //console.log(success['body']);
-              //console.log(window.atob(success['body']));
               const contentType = 'audio/mpeg3';
               const byteCharacters = atob(success['body']);
 
@@ -90,17 +88,9 @@ export class AppComponent implements OnInit {
               const byteArray = new Uint8Array(byteNumbers);
 
               const blob = new Blob([byteArray], {type: contentType});
-              //window.URL.createObjectURL()
-
-              //saveAs(new Blob([binary], {type: 'text/plain'}), this.filename)
               let audio = new Audio();
-              //audio.src = "http://www.schillmania.com/projects/soundmanager2/demo/mpc/audio/CHINA_1.mp3";
               audio.src = window.URL.createObjectURL(blob)
               audio.play()
-              /*audio.src="assets/Speech.mp3"
-              audio.load();
-              audio.play();*/
-            //  this.playAudio();
           },
           error => {
             console.log(error);
