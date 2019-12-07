@@ -64,6 +64,8 @@ typings/
 ## mp3 files
 /speaker-backend/*.mp3
 
+/speaker-backend/Image.jpg
+
 /speaker-frontend/package-lock.json
 
 
